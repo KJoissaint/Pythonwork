@@ -1,21 +1,18 @@
-/library_api
+library_api/
 │
-├── /app
-│   ├── __init__.py
-│   ├── main.py
-│   ├── config.py
-│   ├── database.py
-│   ├── models.py
-│   ├── routes
-│   │   ├── __init__.py
-│   │   ├── books.py
-│   │   ├── authors.py
-│   │   └── genres.py
-│   └── schemas.py
+├── data/
+│   └── books.csv        # Le fichier CSV contenant les données des livres
 │
-├── /tests
-│   ├── test_books.py
-│   └── test_authors.py
+├── app/
+│   ├── __init__.py      # Initialise l'application Flask
+│   ├── models.py        # Gestion du modèle de données (lecture du CSV)
+│   ├── routes.py        # Définit les routes API (endpoints)
+│   └── utils.py         # Fonctions utilitaires (parsing du CSV, etc.)
 │
-├── requirements.txt
-└── README.md
+├── tests/
+│   └── test_api.py      # Tests unitaires pour l'API
+│
+├── config.py            # Configuration générale de l'application
+├── app.py               # Point d'entrée principal pour démarrer l'application
+├── requirements.txt     # Fichier des dépendances Python
+└── README.md            # Instructions pour le projet
