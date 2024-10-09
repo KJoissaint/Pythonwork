@@ -1,0 +1,21 @@
+/library_api
+│
+├── /app
+│   ├── __init__.py
+│   ├── main.py
+│   ├── config.py
+│   ├── database.py
+│   ├── models.py
+│   ├── routes
+│   │   ├── __init__.py
+│   │   ├── books.py
+│   │   ├── authors.py
+│   │   └── genres.py
+│   └── schemas.py
+│
+├── /tests
+│   ├── test_books.py
+│   └── test_authors.py
+│
+├── requirements.txt
+└── README.md
