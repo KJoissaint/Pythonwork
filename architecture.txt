@@ -5,8 +5,8 @@ library_api/
 │
 ├── app/
 │   ├── __init__.py      # Initialise l'application Flask
-│   ├── models.py        # Gestion du modèle de données (lecture du CSV)
-│   ├── routes.py        # Définit les routes API (endpoints)
+│   ├── models.py        # Gestion du modèle de données (lecture/écriture du CSV)
+│   ├── routes.py        # Définit les routes API (endpoints CRUD)
 │   └── utils.py         # Fonctions utilitaires (parsing du CSV, etc.)
 │
 ├── tests/
